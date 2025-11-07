@@ -1,40 +1,380 @@
+"”          </small>
+            <meta charset="utf-8">
+<div class="deng-box2">
+    <div class="deng">
+        <div class="xian">
+        </div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">爱</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c">
+            </div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div>
+<div class="deng-box3">
+    <div class="deng">
+        <div class="xian">
+        </div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">我</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c"></div>
+            <div class="shui-b">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="deng-box1">
+    <div class="deng">
+        <div class="xian">
+        </div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">H</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c"></div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div>
+<div class="deng-box">
+    <div class="deng">
+        <div class="xian">
+        </div>
+        <div class="deng-a">
+            <div class="deng-b">
+                <div class="deng-t">W</div>
+            </div>
+        </div>
+        <div class="shui shui-a">
+            <div class="shui-c">
+            </div>
+            <div class="shui-b"></div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .deng-box {
+        position: fixed;
+        top: -40px;
+        right: 150px;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    .deng-box1 {
+        position: fixed;
+        top: -30px;
+        right: 10px;
+        z-index: 9999;
+        pointer-events: none
+    }
+    .deng-box2 {
+        position: fixed;
+        top: -40px;
+        left: 150px;
+        z-index: 9999;
+        pointer-events: none
+    }
+    .deng-box3 {
+        position: fixed;
+        top: -30px;
+        left: 10px;
+        z-index: 9999;
+        pointer-events: none
+    }
+    .deng-box1 .deng,
+    .deng-box3 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, .8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px #fc903d
+    }
+    .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, .8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px #fa6c00
+    }
+    .deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, .1);
+        margin: 12px 8px 8px 8px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03
+    }
+    .deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, .1);
+        margin: -4px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03
+    }
+    .xian {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 2px;
+        height: 20px;
+        background: #dc8f03
+    }
+    .shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: orange;
+        border-radius: 0 0 5px 5px
+    }
+    .shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%
+    }
+    .shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: orange;
+        border-radius: 0 0 0 5px
+    }
+    .deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: orange;
+        background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03)
+    }
+    .deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: orange;
+        background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03)
+    }
+    .deng-t {
+        font-family: 黑体, Arial, Lucida Grande, Tahoma, sans-serif;
+        font-size: 3.2rem;
+        color: #dc8f03;
+        font-weight: 700;
+        line-height: 85px;
+        text-align: center
+    }
+    .night .deng-box,
+    .night .deng-box1,
+    .night .deng-t {
+        background: 0 0 !important
+    }
+    @-moz-keyframes swing {
+        0% {
+            -moz-transform: rotate(-10deg)
+        }
+        50% {
+            -moz-transform: rotate(10deg)
+        }
+        100% {
+            -moz-transform: rotate(-10deg)
+        }
+    }
+    @-webkit-keyframes swing {
+        0% {
+            -webkit-transform: rotate(-10deg)
+        }
+        50% {
+            -webkit-transform: rotate(10deg)
+        }
+        100% {
+            -webkit-transform: rotate(-10deg)
+        }
+    }
+</style>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wasi AI Chat</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGONI</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top to allow scrolling */
+    min-height: 100vh; /* Ensure the body covers the entire viewport */
+    margin: 0;
+    background-color: #f7f7f7;
+    text-align: center; /* Ensure text inside the body is centered */
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-top: 100px; /* Add some space at the top */
+    width: 100%;
+    height: auto; /* Ensure the height of the body adjusts based on content */
+}
 
-    header {
-      background: #161b22;
-      padding: 15px;
-      text-align: center;
-      font-size: 1.4em;
-      font-weight: bold;
-      border-bottom: 1px solid #30363d;
-      color: #58a6ff;
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center everything inside the container */
+    justify-content: flex-start; /* Align content to the top */
+    width: 100%;
+    flex-grow: 1; /* Allow the container to fill the remaining height */
+}
 
-    #chat-container {
-      flex: 1;
-      overflow-y: auto;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+.logo-container {
+    text-align: center;  /* Center the logo horizontally */
+    margin-bottom: 20px;  /* Add some space below the logo */
+}
 
-    .message {
+.logo {
+    width: 120px;  /* Adjust the width of the logo */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+input[type="text"], input[type="number"], #generatedUrl {
+    width: 325px; /* Make the input fields wider */
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;  /* Add margin on top for spacing */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#instruction {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* New card layout for tutorial */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 80%;  /* Adjust the width of the card */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: auto; /* Ensure card height is based on content */
+}
+
+.card h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=229491742&spec=640" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <!-- Your other content here -->
+    </div>
+    <h2>AGONI 测压</h2>
+    <form id="postForm">
+        <label for="phoneNumber"></label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="请输入手机号" required><br><br>
+
+        <label for="times"></label>
+        <input type="number" id="times" name="times" min="1" placeholder="请输入攻击次数" required><br><br>
+
+        <button type="button" onclick="sendRequests()">开始<br/></button>
+    </form>
+<body>
+    <p id="instruction">AGONI<br />© AGONI by Lime</p>
+</body>
+<div class="card">
+        <h3>使用教程</h3>
+        <p>本站造成的任何后果与搭建者无关本站仅供html代码测试学习以及研究不造成任何违法请勿用本站进行违法行为本站造成的任何事情与搭建者无关感谢夜猫团队提供API接口服务<br />使用则代表同意！！！<br />使用则代表同意！！！<br />使用则代表同意！！！<br />使用则代表同意！！！<br />使用则代表同意！！！<br />使用则代表同意！！！</p>
+    </div>
+</div>
+<div class="card">
+        <h3>常见问题</h3>
+        <p><strong>Question:轰炸后收到的短信和显示的轰炸成功失败数不一致</strong><br />Answer:因为API接口，手机号运营商（验证码被运营商拦截的概率很小）等问题，可能会导致信息延迟或发送失败；如果专业点来说的话，就有这几种可能：1.API接口失效，这通常是您现在使用本程序的时间和程序制作的时间相差过大，当前程序制作时间：2025，如果时间相差太大，说明大部分接口已经失效；2.有一些接口状态码为 200 OK ，但实际上那些接口显示请求失败，这样就会出现弹窗显示的成功数比实际的不一样；同理，有一些接口状态码为 200 ，但如果可以发送的话，状态码就应该是 200 OK，这样就会出现弹窗显示的失败数比实际的不一样<br /><br /><strong>Question:如何停止轰炸</strong><br />Answer:当您关闭或刷新此页面时即可停止轰炸<br /><br /><strong></strong><br /></p>
+    </div>
+</div>
+<div class="card">
+        <h3>温馨提醒</h3>
+        <p>您的IP已被我们记录<i>网络不是法外之地</i><i></i></p>
+    </div>
+</div>
+<div class="card">
+        <h3>免责声明</h3>
+        <p>本    .message {
       max-width: 75%;
       padding: 10px 14px;
       border-radius: 12px;
